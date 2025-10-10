@@ -6,7 +6,7 @@
   "scripts": {
     "build": "bun run build.ts",
     "dev": "dotenvx run -- bun run --watch src/index.ts",
-    "start": "dotenvx run -- bun run src/index.ts"
+    "start": "dotenvx run -- bun run dist/index.js"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.5",
