@@ -1,5 +1,7 @@
 # bun-templates
 
+Dev Container-ready Bun templates are here! ☺️
+
 ## Requirements
 
 ```bash
