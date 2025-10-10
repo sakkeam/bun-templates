@@ -1,0 +1,18 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/base:debian",
+	"forwardPorts": [5173],
+	"features": {
+		"ghcr.io/devcontainers-extra/features/bun:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"oven.bun-vscode",
+				"biomejs.biome",
+				"esbenp.prettier-vscode"
+			]
+		}
+	},
+	"postCreateCommand": "bun install",
+	"postStartCommand": "bun run dev"
+}

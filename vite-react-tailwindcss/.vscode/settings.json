@@ -1,0 +1,14 @@
+{
+	"[css][json][jsonc][typescript][typescriptreact]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[html]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[markdown]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}
