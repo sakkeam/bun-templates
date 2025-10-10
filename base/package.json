@@ -1,5 +1,5 @@
 {
-  "name": "base",
+  "name": "unique-name",
   "module": "index.ts",
   "type": "module",
   "private": true,

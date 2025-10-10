@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "base",
+      "name": "unique-name",
       "devDependencies": {
         "@biomejs/biome": "2.2.5",
         "@types/bun": "latest",
