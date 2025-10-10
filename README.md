@@ -17,3 +17,9 @@ scaffold() {
 ```bash
 scaffold sakkeam/bun-templates/base my-unique-name
 ```
+
+## voltagent
+
+```bash
+scaffold sakkeam/bun-templates/voltagent my-unique-name
+```
