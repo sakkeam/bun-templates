@@ -13,6 +13,7 @@
 			]
 		}
 	},
+	"onCreateCommand": "curl -sfS https://dotenvx.sh | sudo sh",
 	"postCreateCommand": "bun install",
 	"postStartCommand": "bun run dev"
 }
