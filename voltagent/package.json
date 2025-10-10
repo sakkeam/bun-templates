@@ -1,0 +1,29 @@
+{
+  "name": "unique-name",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bun run build.ts",
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.5",
+    "@types/bun": "latest",
+    "@types/node": "^24.7.1",
+    "@voltagent/cli": "^0.1.11"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2",
+    "@voltagent/core": "^1.1.25",
+    "@voltagent/libsql": "^1.0.7",
+    "@voltagent/logger": "^1.0.2",
+    "@voltagent/server-hono": "^1.0.17",
+    "ai": "^5.0.68",
+    "zod": "3"
+  }
+}
