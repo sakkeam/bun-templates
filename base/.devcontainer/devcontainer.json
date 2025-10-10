@@ -5,7 +5,11 @@
 	},
 	"customizations": {
 		"vscode": {
-			"extensions": ["oven.bun-vscode", "biomejs.biome"]
+			"extensions": [
+				"oven.bun-vscode",
+				"biomejs.biome",
+				"esbenp.prettier-vscode"
+			]
 		}
 	},
 	"postCreateCommand": "bun install"
