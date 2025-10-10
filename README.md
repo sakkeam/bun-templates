@@ -24,6 +24,12 @@ scaffold sakkeam/bun-templates/base my-unique-name
 scaffold sakkeam/bun-templates/vite my-unique-name
 ```
 
+## vite-react
+
+```bash
+scaffold sakkeam/bun-templates/vite-react my-unique-name
+```
+
 ## voltagent
 
 ```bash
