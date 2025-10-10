@@ -1,0 +1,12 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/base:debian",
+	"features": {
+		"ghcr.io/devcontainers-extra/features/bun:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": ["oven.bun-vscode", "biomejs.biome"]
+		}
+	},
+	"postCreateCommand": "bun install"
+}
