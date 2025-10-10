@@ -3,7 +3,7 @@
 		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "vscode.html-language-features"
 	},
-	"[typescript][json][jsonc]": {
+	"[json][jsonc][typescript]": {
 		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "biomejs.biome"
 	},
