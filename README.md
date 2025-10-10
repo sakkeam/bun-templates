@@ -18,6 +18,12 @@ scaffold() {
 scaffold sakkeam/bun-templates/base my-unique-name
 ```
 
+## vite
+
+```bash
+scaffold sakkeam/bun-templates/vite my-unique-name
+```
+
 ## voltagent
 
 ```bash

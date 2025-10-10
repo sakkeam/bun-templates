@@ -1,0 +1,19 @@
+{
+  "name": "unique-name",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bunx --bun vite",
+    "build": "bunx --bun vite build",
+    "preview": "bunx --bun vite preview"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.5",
+    "@types/bun": "latest",
+    "vite": "^7.1.9"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
