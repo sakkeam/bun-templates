@@ -32,7 +32,7 @@ scaffold sakkeam/bun-templates/vite my-unique-name
 scaffold sakkeam/bun-templates/vite-react my-unique-name
 ```
 
-## vite-tailwindcss
+## vite-react-tailwindcss
 
 ```bash
 scaffold sakkeam/bun-templates/vite-react-tailwindcss my-unique-name
