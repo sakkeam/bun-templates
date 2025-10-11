@@ -38,6 +38,12 @@ scaffold sakkeam/bun-templates/vite-react my-unique-name
 scaffold sakkeam/bun-templates/vite-react-tailwindcss my-unique-name
 ```
 
+## vite-shadcn
+
+```bash
+scaffold sakkeam/bun-templates/vite-shadcn my-unique-name
+```
+
 ## voltagent
 
 ```bash
@@ -51,6 +57,7 @@ flowchart TD
     base --> vite
     vite --> vite-react
     vite-react --> vite-react-tailwindcss
+    vite-react-tailwindcss --> vite-shadcn
 
     base --> voltagent
 ```
