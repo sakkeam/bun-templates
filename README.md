@@ -20,6 +20,12 @@ scaffold() {
 scaffold sakkeam/bun-templates/base my-unique-name
 ```
 
+## workspaces
+
+```bash
+scaffold sakkeam/bun-templates/workspaces my-unique-name
+```
+
 ## vite
 
 ```bash
@@ -60,6 +66,9 @@ scaffold sakkeam/bun-templates/voltagent-cloudflare-workers my-unique-name
 
 ```mermaid
 flowchart TD
+    base
+    workspaces
+
     base --> vite
     vite --> vite-react
     vite-react --> vite-react-tailwindcss
