@@ -50,6 +50,12 @@ scaffold sakkeam/bun-templates/vite-shadcn my-unique-name
 scaffold sakkeam/bun-templates/voltagent my-unique-name
 ```
 
+## voltagent-cloudflare-workers
+
+```bash
+scaffold sakkeam/bun-templates/voltagent-cloudflare-workers my-unique-name
+```
+
 ## Dependency Graph
 
 ```mermaid
@@ -60,4 +66,5 @@ flowchart TD
     vite-react-tailwindcss --> vite-shadcn
 
     base --> voltagent
+    voltagent --> voltagent-cloudflare-workers
 ```
