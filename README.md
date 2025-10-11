@@ -43,3 +43,14 @@ scaffold sakkeam/bun-templates/vite-react-tailwindcss my-unique-name
 ```bash
 scaffold sakkeam/bun-templates/voltagent my-unique-name
 ```
+
+## Dependency Graph
+
+```mermaid
+flowchart TD
+    base --> vite
+    vite --> vite-react
+    vite-react --> vite-react-tailwindcss
+
+    base --> voltagent
+```
