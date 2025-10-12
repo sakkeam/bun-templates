@@ -8,9 +8,12 @@ Dev Container-ready Bun templates are here! ☺️
 scaffold() {
     local template="$1"
     local name="$2"
+    local pascal_name="$(printf '%s\n' "$name" | sed -E 's/(^|-)(.)/\U\2/g')"
     npx tiged "$template" "$name"
     find "$name" -type f | xargs sed -i "s/unique-name/$name/g"
+    find "$name" -type f | xargs sed -i "s/UniqueName/$pascal_name/g"
     find "$name" | xargs rename "s/unique-name/$name/g" "$name"
+    find "$name" | xargs rename "s/UniqueName/$pascal_name/g" "$pascal_name"
 }
 ```
 
@@ -62,6 +65,12 @@ scaffold sakkeam/bun-templates/voltagent my-unique-name
 scaffold sakkeam/bun-templates/voltagent-cloudflare-workers my-unique-name
 ```
 
+## fullstack-vite-shadcn-voltagent-cloudflare-workers
+
+```bash
+scaffold sakkeam/bun-templates/fullstack-vite-shadcn-voltagent-cloudflare-workers my-unique-name
+```
+
 ## Dependency Graph
 
 ```mermaid
@@ -76,4 +85,8 @@ flowchart TD
 
     base --> voltagent
     voltagent --> voltagent-cloudflare-workers
+
+    workspaces --> fullstack-vite-shadcn-voltagent-cloudflare-workers
+    vite-shadcn --> fullstack-vite-shadcn-voltagent-cloudflare-workers
+    voltagent-cloudflare-workers --> fullstack-vite-shadcn-voltagent-cloudflare-workers
 ```
