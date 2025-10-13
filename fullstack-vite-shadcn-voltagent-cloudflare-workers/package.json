@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "workspaces": ["packages/**"],
   "scripts": {
+    "format": "bun run format.ts",
+    "format:write": "bun run format.ts write",
+    "lint": "bun run lint.ts",
+    "lint:write": "bun run lint.ts write",
     "dev": "dotenvx run -f .env.local -f .env.development -- bun run dev.ts",
     "build": "bun run build.ts",
     "deploy:preview": "dotenvx run -f .env.preview -- bun run deploy.ts preview",
@@ -12,6 +16,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.2.5",
     "@types/bun": "latest",
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "prettier": "3.6.2"
   }
 }
