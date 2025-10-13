@@ -100,6 +100,7 @@ bun run migrate
 To deploy:
 
 ```bash
-bun run deploy:frontend
-bun run deploy:backend
+bun run deploy:preview
+bun run deploy:staging
+bun run deploy:production
 ```
