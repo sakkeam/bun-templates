@@ -1,5 +1,5 @@
 {
-	"[github-actions-workflow][markdown]": {
+	"[github-actions-workflow][markdown][yaml]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true
 	},

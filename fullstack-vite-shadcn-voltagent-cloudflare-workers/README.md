@@ -6,6 +6,12 @@ To install dependencies:
 bun install
 ```
 
+To install Git hooks:
+
+```bash
+bunx lefthook install
+```
+
 To set environment variables:
 
 ```bash

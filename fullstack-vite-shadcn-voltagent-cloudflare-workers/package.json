@@ -21,6 +21,7 @@
 		"@biomejs/biome": "2.2.5",
 		"@types/bun": "latest",
 		"concurrently": "^9.2.1",
+		"lefthook": "^1.13.6",
 		"prettier": "3.6.2"
 	}
 }
