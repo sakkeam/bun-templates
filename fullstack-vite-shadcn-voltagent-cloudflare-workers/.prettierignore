@@ -1,5 +1,7 @@
 **/.wrangler
 
+**/*.css
 **/*.json
 **/*.jsonc
 **/*.ts
+**/*.tsx
