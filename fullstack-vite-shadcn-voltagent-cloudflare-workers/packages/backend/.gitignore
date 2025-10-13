@@ -31,6 +31,11 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # dotenvx
 .env.keys
+.env.local.keys
+.env.local
+.env.preview.keys
+.env.staging.keys
+.env.production.keys
 
 # Wrangler
 

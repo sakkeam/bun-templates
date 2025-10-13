@@ -5,8 +5,10 @@
   "private": true,
   "scripts": {
     "build": "bun run build.ts",
-    "dev": "dotenvx run -- npx wrangler dev --ip 0.0.0.0",
-    "deploy": "npx wrangler deploy dist/index.js"
+    "dev": "dotenvx run -f .env.local -f .env.development -- npx wrangler dev --ip 0.0.0.0",
+    "deploy:preview": "dotenvx run -f .env.preview -- npx wrangler deploy --env preview dist/index.js",
+    "deploy:staging": "dotenvx run -f .env.staging -- npx wrangler deploy --env staging dist/index.js",
+    "deploy:production": "dotenvx run -f .env.production -- npx wrangler deploy --env production dist/index.js"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.5",

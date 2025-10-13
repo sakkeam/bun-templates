@@ -7,7 +7,9 @@
     "dev": "bunx --bun vite",
     "build": "bunx --bun vite build",
     "preview": "bunx --bun vite preview",
-    "deploy": "npx wrangler pages deploy"
+    "deploy:preview": "dotenvx run -f .env.preview -- npx wrangler pages deploy --branch preview",
+    "deploy:staging": "dotenvx run -f .env.staging -- npx wrangler pages deploy --branch staging",
+    "deploy:production": "dotenvx run -f .env.production -- npx wrangler pages deploy --branch production"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.5",

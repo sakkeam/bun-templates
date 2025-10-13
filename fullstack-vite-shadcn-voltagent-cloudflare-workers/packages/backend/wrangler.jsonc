@@ -7,5 +7,16 @@
 		"nodejs_compat",
 		"nodejs_compat_populate_process_env",
 		"no_handle_cross_request_promise_resolution"
-	]
+	],
+	"env": {
+		"preview": {
+			"name": "unique-name-worker-preview"
+		},
+		"staging": {
+			"name": "unique-name-worker-staging"
+		},
+		"production": {
+			"name": "unique-name-worker-production"
+		}
+	}
 }
