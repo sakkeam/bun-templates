@@ -12,6 +12,33 @@ To install Git hooks:
 bunx lefthook install
 ```
 
+To generate:
+
+```bash
+bun run generate
+```
+
+To format:
+
+```bash
+bun run format
+bun run format:write
+```
+
+To lint:
+
+```bash
+bun run lint
+bun run lint:write
+```
+
+To format and lint:
+
+```bash
+bun run check
+bun run check:write
+```
+
 To set environment variables:
 
 ```bash
@@ -56,6 +83,18 @@ To build:
 
 ```bash
 bun run build
+```
+
+To provision:
+
+```bash
+bun run provision
+```
+
+To migrate:
+
+```bash
+bun run migrate
 ```
 
 To deploy:
