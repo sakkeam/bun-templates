@@ -5,6 +5,7 @@
 		"packages/**"
 	],
 	"scripts": {
+		"generate": "bun run generate.ts",
 		"format": "bun run format.ts",
 		"format:write": "bun run format.ts write",
 		"lint": "bun run lint.ts",
@@ -13,6 +14,8 @@
 		"check:write": "bun run format:write && bun run lint:write",
 		"dev": "dotenvx run -f .env.local -f .env.development -- bun run dev.ts",
 		"build": "bun run build.ts",
+		"provision": "bun run provision.ts",
+		"migrate": "bun run migrate.ts",
 		"deploy:preview": "dotenvx run -f .env.preview -- bun run deploy.ts preview",
 		"deploy:staging": "dotenvx run -f .env.staging -- bun run deploy.ts staging",
 		"deploy:production": "dotenvx run -f .env.production -- bun run deploy.ts production"
