@@ -5,7 +5,7 @@
 	"private": true,
 	"scripts": {
 		"test": "vitest run",
-		"test:watch": "vitest",
+		"test:watch": "vitest watch",
 		"build": "bun run build.ts",
 		"dev": "dotenvx run -f .env.local -f .env.development -- npx wrangler dev --ip 0.0.0.0",
 		"deploy:preview": "dotenvx run -f .env.preview -- npx wrangler deploy --env preview dist/index.js",
