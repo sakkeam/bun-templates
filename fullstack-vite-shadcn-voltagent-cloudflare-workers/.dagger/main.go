@@ -41,6 +41,7 @@ func (m *UniqueName) BuildAndDeploy(
 		WithExec([]string{"bun", "install"}).
 		WithExec([]string{"bun", "run", "format"}).
 		WithExec([]string{"bun", "run", "lint"}).
+		WithExec([]string{"bun", "run", "test"}).
 		WithExec([]string{"bun", "run", "build"}).
 		WithExec([]string{"bun", "run", "deploy:" + env}).
 		Stdout(ctx)

@@ -13,7 +13,8 @@
 				"biomejs.biome",
 				"esbenp.prettier-vscode",
 				"golang.Go",
-				"GitHub.vscode-github-actions"
+				"GitHub.vscode-github-actions",
+				"vitest.explorer"
 			]
 		}
 	},

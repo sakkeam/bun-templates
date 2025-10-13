@@ -4,6 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
     "build": "bun run build.ts",
     "dev": "dotenvx run -f .env.local -f .env.development -- npx wrangler dev --ip 0.0.0.0",
     "deploy:preview": "dotenvx run -f .env.preview -- npx wrangler deploy --env preview dist/index.js",
@@ -15,6 +17,7 @@
     "@types/bun": "latest",
     "@types/node": "^24.7.1",
     "@voltagent/cli": "^0.1.11",
+    "vitest": "^3.2.4",
     "wrangler": "^4.42.2"
   },
   "peerDependencies": {
