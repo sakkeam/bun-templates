@@ -5,10 +5,10 @@ import App from "./App";
 const app = document.getElementById("app");
 
 if (app) {
-	const root = createRoot(app);
-	root.render(
-		<StrictMode>
-			<App />
-		</StrictMode>,
-	);
+  const root = createRoot(app);
+  root.render(
+    <StrictMode>
+      <App />
+    </StrictMode>,
+  );
 }

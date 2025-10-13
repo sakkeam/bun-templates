@@ -1,8 +1,8 @@
 {
-  "name": "unique-name",
-  "engineVersion": "v0.19.2",
-  "sdk": {
-    "source": "go"
-  },
-  "source": ".dagger"
+	"name": "unique-name",
+	"engineVersion": "v0.19.2",
+	"sdk": {
+		"source": "go"
+	},
+	"source": ".dagger"
 }

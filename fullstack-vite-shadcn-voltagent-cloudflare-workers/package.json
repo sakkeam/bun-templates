@@ -1,24 +1,26 @@
 {
-  "name": "unique-name",
-  "version": "1.0.0",
-  "workspaces": ["packages/**"],
-  "scripts": {
-    "format": "bun run format.ts",
-    "format:write": "bun run format.ts write",
-    "lint": "bun run lint.ts",
-    "lint:write": "bun run lint.ts write",
-    "check": "bun run format && bun run lint",
-    "check:write": "bun run format:write && bun run lint:write",
-    "dev": "dotenvx run -f .env.local -f .env.development -- bun run dev.ts",
-    "build": "bun run build.ts",
-    "deploy:preview": "dotenvx run -f .env.preview -- bun run deploy.ts preview",
-    "deploy:staging": "dotenvx run -f .env.staging -- bun run deploy.ts staging",
-    "deploy:production": "dotenvx run -f .env.production -- bun run deploy.ts production"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.2.5",
-    "@types/bun": "latest",
-    "concurrently": "^9.2.1",
-    "prettier": "3.6.2"
-  }
+	"name": "unique-name",
+	"version": "1.0.0",
+	"workspaces": [
+		"packages/**"
+	],
+	"scripts": {
+		"format": "bun run format.ts",
+		"format:write": "bun run format.ts write",
+		"lint": "bun run lint.ts",
+		"lint:write": "bun run lint.ts write",
+		"check": "bun run format && bun run lint",
+		"check:write": "bun run format:write && bun run lint:write",
+		"dev": "dotenvx run -f .env.local -f .env.development -- bun run dev.ts",
+		"build": "bun run build.ts",
+		"deploy:preview": "dotenvx run -f .env.preview -- bun run deploy.ts preview",
+		"deploy:staging": "dotenvx run -f .env.staging -- bun run deploy.ts staging",
+		"deploy:production": "dotenvx run -f .env.production -- bun run deploy.ts production"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.5",
+		"@types/bun": "latest",
+		"concurrently": "^9.2.1",
+		"prettier": "3.6.2"
+	}
 }
