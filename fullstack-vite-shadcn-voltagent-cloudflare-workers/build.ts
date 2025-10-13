@@ -1,6 +1,6 @@
 import concurrently from "concurrently";
 
-concurrently([
+const { result } = concurrently([
 	{
 		command: "bun run --cwd=packages/frontend build",
 		name: "frontend",
@@ -10,3 +10,8 @@ concurrently([
 		name: "backend",
 	},
 ]);
+
+result.then(
+	() => {},
+	() => {},
+);

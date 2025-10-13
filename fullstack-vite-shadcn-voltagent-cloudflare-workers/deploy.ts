@@ -2,7 +2,7 @@ import concurrently from "concurrently";
 
 const env = Bun.argv[2] ?? "staging";
 
-concurrently([
+const { result } = concurrently([
 	{
 		command: `bun run --cwd=packages/frontend deploy:${env}`,
 		name: "frontend",
@@ -12,3 +12,8 @@ concurrently([
 		name: "backend",
 	},
 ]);
+
+result.then(
+	() => {},
+	() => {},
+);
