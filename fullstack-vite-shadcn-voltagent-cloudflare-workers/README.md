@@ -42,27 +42,37 @@ bun run check:write
 To set environment variables:
 
 ```bash
-dotenvx set -f .env.local OPENAI_API_KEY your_openai_api_key_local
-dotenvx set -f .env.local VOLTAGENT_PUBLIC_KEY your_voltagent_public_key_local
-dotenvx set -f .env.local VOLTAGENT_SECRET_KEY your_voltagent_secret_key_local
+dotenvx set OPENAI_API_KEY your_openai_api_key_development -f .env.development
+dotenvx set VOLTAGENT_PUBLIC_KEY your_voltagent_public_key_development -f .env.development
+dotenvx set VOLTAGENT_SECRET_KEY your_voltagent_secret_key_development -f .env.development
+dotenvx decrypt -f .env.development --stdout > packages/backend/.dev.vars
 
-dotenvx set -f .env.preview OPENAI_API_KEY your_openai_api_key_preview
-dotenvx set -f .env.preview VOLTAGENT_PUBLIC_KEY your_voltagent_public_key_preview
-dotenvx set -f .env.preview VOLTAGENT_SECRET_KEY your_voltagent_secret_key_preview
-dotenvx set -f .env.preview CLOUDFLARE_API_TOKEN your_cloudflare_api_token_preview
-dotenvx set -f .env.preview CLOUDFLARE_ACCOUNT_ID your_cloudflare_account_id_preview
+dotenvx set OPENAI_API_KEY your_openai_api_key_preview -f .env.preview
+dotenvx set VOLTAGENT_PUBLIC_KEY your_voltagent_public_key_preview -f .env.preview
+dotenvx set VOLTAGENT_SECRET_KEY your_voltagent_secret_key_preview -f .env.preview
+dotenvx set CLOUDFLARE_API_TOKEN your_cloudflare_api_token_preview -f .env.preview
+dotenvx set CLOUDFLARE_ACCOUNT_ID your_cloudflare_account_id_preview -f .env.preview
+npx -w packages/backend wrangler secret put --env preview OPENAI_API_KEY
+npx -w packages/backend wrangler secret put --env preview VOLTAGENT_PUBLIC_KEY
+npx -w packages/backend wrangler secret put --env preview VOLTAGENT_SECRET_KEY
 
-dotenvx set -f .env.staging OPENAI_API_KEY your_openai_api_key_staging
-dotenvx set -f .env.staging VOLTAGENT_PUBLIC_KEY your_voltagent_public_key_staging
-dotenvx set -f .env.staging VOLTAGENT_SECRET_KEY your_voltagent_secret_key_staging
-dotenvx set -f .env.staging CLOUDFLARE_API_TOKEN your_cloudflare_api_token_staging
-dotenvx set -f .env.staging CLOUDFLARE_ACCOUNT_ID your_cloudflare_account_id_staging
+dotenvx set OPENAI_API_KEY your_openai_api_key_staging -f .env.staging
+dotenvx set VOLTAGENT_PUBLIC_KEY your_voltagent_public_key_staging -f .env.staging
+dotenvx set VOLTAGENT_SECRET_KEY your_voltagent_secret_key_staging -f .env.staging
+dotenvx set CLOUDFLARE_API_TOKEN your_cloudflare_api_token_staging -f .env.staging
+dotenvx set CLOUDFLARE_ACCOUNT_ID your_cloudflare_account_id_staging -f .env.staging
+npx -w packages/backend wrangler secret put --env preview OPENAI_API_KEY
+npx -w packages/backend wrangler secret put --env preview VOLTAGENT_PUBLIC_KEY
+npx -w packages/backend wrangler secret put --env preview VOLTAGENT_SECRET_KEY
 
-dotenvx set -f .env.production OPENAI_API_KEY your_openai_api_key_production
-dotenvx set -f .env.production VOLTAGENT_PUBLIC_KEY your_voltagent_public_key_production
-dotenvx set -f .env.production VOLTAGENT_SECRET_KEY your_voltagent_secret_key_production
-dotenvx set -f .env.production CLOUDFLARE_API_TOKEN your_cloudflare_api_token_production
-dotenvx set -f .env.production CLOUDFLARE_ACCOUNT_ID your_cloudflare_account_id_production
+dotenvx set OPENAI_API_KEY your_openai_api_key_production -f .env.production
+dotenvx set VOLTAGENT_PUBLIC_KEY your_voltagent_public_key_production -f .env.production
+dotenvx set VOLTAGENT_SECRET_KEY your_voltagent_secret_key_production -f .env.production
+dotenvx set CLOUDFLARE_API_TOKEN your_cloudflare_api_token_production -f .env.production
+dotenvx set CLOUDFLARE_ACCOUNT_ID your_cloudflare_account_id_production -f .env.production
+npx -w packages/backend wrangler secret put --env production OPENAI_API_KEY
+npx -w packages/backend wrangler secret put --env production VOLTAGENT_PUBLIC_KEY
+npx -w packages/backend wrangler secret put --env production VOLTAGENT_SECRET_KEY
 ```
 
 To set secrets in GitHub Actions:
