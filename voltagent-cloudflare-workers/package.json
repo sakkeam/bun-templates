@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "bun run build.ts",
-    "dev": "dotenvx run -- npx wrangler dev --ip 0.0.0.0",
+    "dev": "dotenvx run -- bun run dev.ts",
     "deploy": "npx wrangler deploy"
   },
   "devDependencies": {
